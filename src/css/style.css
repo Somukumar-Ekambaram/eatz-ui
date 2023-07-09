@@ -1,0 +1,8 @@
+/* This is global scss file. */
+
+/* Importing shared css styles */
+@import './shared/index.css';
+
+* {
+    font-family: var(--poppins-regular);
+}
