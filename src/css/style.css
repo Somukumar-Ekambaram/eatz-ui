@@ -1,8 +1,42 @@
 /* This is global scss file. */
 
 /* Importing shared css styles */
-@import './shared/index.css';
+@import '../core/css/index.css';
 
 * {
     font-family: var(--poppins-regular);
+}
+
+body {
+    margin: 0;
+}
+
+.nav {
+    background-color: var(--primary);
+    color: var(--white);
+    display: flex;
+    padding: 0.5rem;
+}
+
+.nav > .title {
+    width: 20%;
+    text-align: end;
+}
+
+.nav > .title > h1 {
+    margin: 0;
+    font-family: var(--poppins-medium);
+    font-size: xx-large;
+}
+
+.nav > .nav-items {
+    width: 80%;
+}
+
+.nav > .nav-items > ul {
+    width: 60%;
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-evenly;
+    gap: 5rem;
 }
